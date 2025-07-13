@@ -147,6 +147,7 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(74, 107, 255, 0.3);
 }
+
 /* Productive Users Section */
 .productive-users {
     background-color: var(--light-color);
@@ -158,6 +159,7 @@ body {
     font-size: 2.2rem;
     margin-bottom: 50px;
 }
+
 
 .stats {
     display: flex;
@@ -179,4 +181,113 @@ body {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 10px;
+}
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f5f7fa;
+}
+
+/* Reviews Section */
+.reviews-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+
+/* Reviews Container */
+.reviews-container {
+    display: flex;
+    gap: 30px;
+}
+
+/* Individual Review */
+.review {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Stars Rating */
+.stars {
+    color: #FFD700;
+    font-size: 18px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+/* Comment Styles */
+.bold-comment {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 12px 0;
+    color: #2d3748;
+}
+
+.detailed-comment {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Reviewer Line */
+.reviewer-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.reviewer-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e2e8f0;
+}
+
+.reviewer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 15px;
+    color: #2d3748;
+}
+
+.date {
+    font-size: 13px;
+    color: #718096;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .reviewer-line {
+        gap: 10px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
 }
