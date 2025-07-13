@@ -1,0 +1,89 @@
+/* Global Styles */
+:root {
+    --primary-color: #4a6bff;
+    --secondary-color: #3a56d4;
+    --dark-color: #2d3748;
+    --light-color: #f7fafc;
+    --gray-color: #718096;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+/* Navbar Section */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.signup-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.signup-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Banner Section */
+.banner {
+    height: 100vh;
+    background: url(Assets/Hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in;
+}
