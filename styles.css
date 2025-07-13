@@ -74,16 +74,76 @@ body {
 .banner {
     height: 100vh;
     background: url(Assets/Hero-bg.png);
-    background-size: cover;
+    background-size: 1440 698;
     background-position: center;
     display: flex;
     align-items: center;
     text-align: center;
-    color: var(--white);
+    color: var(--black);
 }
 
 .banner h1 {
     font-size: 3.5rem;
     margin-bottom: 30px;
     animation: fadeIn 1s ease-in;
+}
+.focus-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.1rem;
+    padding: 15px 40px;
+}
+
+.focus-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Action Section */
+.action {
+    padding: 100px 0;
+}
+
+.action .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.action-content {
+    flex: 1;
+}
+
+.action-image {
+    flex: 1;
+}
+
+.action-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.action h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.action p {
+    font-size: 1.1rem;
+    color: var(--gray-color);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.launch-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.launch-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(74, 107, 255, 0.3);
 }
