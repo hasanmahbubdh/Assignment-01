@@ -291,3 +291,138 @@ body {
         font-size: 1.5rem;
     }
 }
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+}
+
+.contact .container {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+    font-size: 97;
+    font: bold;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: var(--gray-color);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 100%;
+}
+
+.contact-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--dark-color);
+    color: var(--white);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #a0aec0;
+    margin-bottom: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .action .container,
+    .contact .container {
+        flex-direction: column;
+    }
+    
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+    
+    .action h2,
+    .productive-users h2,
+    .feedback h2,
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+    
+    .stats {
+        flex-direction: column;
+    }
+}
