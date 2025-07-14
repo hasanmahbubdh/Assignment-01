@@ -27,23 +27,11 @@ body {
     padding: 0 20px;
 }
 
-/* Button Styles */
-.btn {
-    display: inline-block;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: none;
-}
 
 /* Navbar Section */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 100;
 }
@@ -57,12 +45,14 @@ body {
 .logo {
     font-size: 24px;
     font-weight: 700;
-    color: var(--white);
+    color: var(--secondary-color);
 }
 
 .signup-btn {
     background-color: var(--primary-color);
     color: var(--white);
+    border-radius: 5px;
+    padding: 15 px 100 px;
 }
 
 .signup-btn:hover {
@@ -88,16 +78,15 @@ body {
     animation: fadeIn 1s ease-in;
 }
 .focus-btn {
-    background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--secondary-color);
+    font-weight: bold;
     font-size: 1.1rem;
-    padding: 15px 40px;
+    padding: 15px 45px;
 }
 
 .focus-btn:hover {
-    background-color: var(--secondary-color);
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+       border-radius: 10px;
 }
 
 /* Action Section */
@@ -121,7 +110,7 @@ body {
 
 .action-image img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 48px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -138,8 +127,12 @@ body {
 }
 
 .launch-btn {
+    style:h
+    font-size: 16;
+    padding: 48 229;
     background-color: var(--primary-color);
     color: var(--white);
+    border-radius: 50px;
 }
 
 .launch-btn:hover {
